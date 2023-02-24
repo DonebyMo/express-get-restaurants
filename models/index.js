@@ -1,4 +1,3 @@
-const {Restaurant} = require('./Restaurant')
-
-
-module.exports = {Restaurant};
+const Restaurant = require("./Restaurant");
+const express = require("express");
+module.exports = Restaurant;
