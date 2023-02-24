@@ -19,6 +19,7 @@ router.get("/:id", async (req, res) => {
 router.post(
   "/",
   [check("name").not().isEmpty()],
+  [check("name").isLength({ min: 10, max: 30 })],
   [check("location").not().isEmpty()],
   [check("cuisine").not().isEmpty()],
   async (req, res) => {
